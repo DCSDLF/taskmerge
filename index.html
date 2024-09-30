@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV File Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSV File Editor</h1>
+        <input type="file" id="fileInput" multiple accept=".csv">
+        <button id="loadFiles">Load CSV Files</button>
+        <button id="formatData" style="display:none;">Format Data</button>
+        <button id="downloadXLSX" style="display:none;">Download XLSX</button>
+        <div id="csvTableContainer"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
